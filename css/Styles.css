@@ -1,0 +1,94 @@
+:root {
+  --morado: #4B1D6B;
+  --morado-claro: #5E2A84;
+  --amarillo: #FFC400;
+  --blanco: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--morado);
+  color: var(--blanco);
+}
+
+/* HERO */
+.papastico-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.papastico-hero span {
+  color: var(--amarillo);
+}
+
+.papastico-hero p {
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+/* SECCIONES */
+.papastico-section {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* CARDS */
+.papastico-card {
+  background: linear-gradient(180deg, #5E2A84, #4B1D6B);
+  border-radius: 18px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* PRECIOS */
+.papastico-price {
+  color: var(--amarillo);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* PAPAS INFO */
+.papas-info {
+  background: rgba(255,196,0,0.15);
+  border-left: 4px solid var(--amarillo);
+  padding: 0.6rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+/* NAV FLOTANTE */
+.papastico-nav {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(94,42,132,0.95);
+  border-radius: 40px;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  gap: 0.6rem;
+  z-index: 999;
+}
+
+.papastico-nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
